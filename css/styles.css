@@ -23,62 +23,71 @@
 }
 
 #stage {
-    margin: 1em auto;
-    -webkit-perspective: 1200px;
-    -moz-perspective: 1200px;
-    -ms-perspective: 1200px;
-    perspective: 1200px;
-  }
+  margin: 1em auto;
+  -webkit-perspective: 1200px;
+  -moz-perspective: 1200px;
+  -ms-perspective: 1200px;
+  perspective: 1200px;
+}
 
 .spinner {
-    -webkit-animation-name: spinner;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 6s;
+  -webkit-animation-name: spinner;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 6s;
 
-    animation-name: spinner;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-duration: 6s;
+  animation-name: spinner;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
 
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    position: absolute;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: absolute;
+}
+
+/*.spinner:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}*/
+
+@keyframes spinnerDegrees {
+  from {
+    -moz-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    transform: rotateY(90deg);
   }
-
-  /*.spinner:hover {
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
-  }*/
-
-  @keyframes spinnerDegrees {
-    from {
-      -moz-transform: rotateY(90deg);
-      -ms-transform: rotateY(90deg);
-      transform: rotateY(90deg);
-    }
-    to {
-      -moz-transform: rotateY(-270deg);
-      -ms-transform: rotateY(-270deg);
-      transform: rotateY(-270deg);
-    }
+  to {
+    -moz-transform: rotateY(-270deg);
+    -ms-transform: rotateY(-270deg);
+    transform: rotateY(-270deg);
   }
-    .spinnerDegrees {
-    -webkit-animation-name: spinnerDegrees;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 6s;
+}
 
-    animation-name: spinnerDegrees;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-duration: 6s;
+.spinnerDegrees {
+  -webkit-animation-name: spinnerDegrees;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 6s;
 
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    position: absolute;
-  }
+  animation-name: spinnerDegrees;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: absolute;
+}
+
+.wf-loading h1 { 
+  visibility: hidden; 
+}
+
+.wf-active h1, .wf-inactive h1 {
+  visibility: visible; font-family: 'Cantarell';
+}
