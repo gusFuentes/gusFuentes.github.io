@@ -14,6 +14,13 @@ md-sidenav{
   background-color: #000 !important;
 }
 
+md-backdrop {
+  top: 0;
+}
+
+md-dialog {
+  opacity: 1 !important;
+}
 
 
 
