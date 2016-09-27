@@ -9,7 +9,7 @@
 	</head>
 	<body layout="row" ng-controller="AppCtrl">
 		<md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
-			<h3 style="color: #fff">Holas</h3>
+			<h1 class="wf-loading" style="color: #fff">Font loader text</h1>
 		</md-sidenav>
 
 		<div layout="column" class="relative" layout-fill role="main">
@@ -26,27 +26,85 @@
 				</div>
 			</md-toolbar>
 
-			<md-content style="height: 800px;">
-				<div id="stage" style="background: rgba(0,0,0,0);" style="width:800px; ">
-				<img class="spinner" src="img/image.svg" style="width:100%; "></img>
-				<img class="spinner spinnerDegrees" src="img/image.svg" style="width:100%; "></img>
-			</md-content>
+			<div>
+			
+			<div class="parallax">
+				<div id="group1" class="parallax__group">
+					<div class="parallax__layer parallax__layer--base">
+						<div class="title">Base Layer group 1</div>
+					</div>
+				</div>
+
+				<div id="group2" class="parallax__group">
+					<div class="parallax__layer parallax__layer--base">
+						<div class="title">Base Layer group 2</div>
+					</div>
+					<div class="parallax__layer parallax__layer--back">
+						<div class="title">Background Layer group 2</div>			
+					</div>
+				</div>
+
+				<div id="group3" class="parallax__group">
+					<div class="parallax__layer parallax__layer--fore">
+						<div class="title">Foreground Layer group 3</div>
+					</div>
+					<div class="parallax__layer parallax__layer--base">
+						<div class="title">Base Layer group 3</div>
+					</div>
+				</div>
+
+				<div id="group4" class="parallax__group">
+					<div class="parallax__layer parallax__layer--base">
+						<div class="title">Base Layer  4</div>
+					</div>
+					<div class="parallax__layer parallax__layer--back">
+						<div class="title">Background Layer  4</div>
+					</div>
+					<div class="parallax__layer parallax__layer--deep">
+						<div class="title">Deep Background Layer 4</div>
+						<div id="stage" style="background: rgba(0,0,0,0); width:500px !important; height: 500px; z-index: 6666;">
+							<img class="spinner" src="img/image.svg" style="width:100%; "></img>
+							<img class="spinner spinnerDegrees" src="img/image.svg" style="width:100%; "></img>
+						</div>
+					</div>
+				</div>
+
+				<div id="group5" class="parallax__group">
+					<div class="parallax__layer parallax__layer--fore">
+						<div class="title">Foreground Layer 5</div>
+					</div>
+					<div class="parallax__layer parallax__layer--base">
+						<div class="title">Base Layer 5</div>
+					</div>
+				</div>
+
+				<div id="group6" class="parallax__group">
+					<div class="parallax__layer parallax__layer--back">
+						<div class="title">Background Layer</div>
+					</div>
+					<div class="parallax__layer parallax__layer--base">
+						<div class="title">Base Layer</div>
+					</div>
+				</div>
+
+				<div id="group7" class="parallax__group">
+					<div class="parallax__layer parallax__layer--base">
+						<div class="title">Base Layer</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
-
-		<h1 class="wf-loading">Font loader text</h1>
-
 
 		<!-- Angular Material Dependencies -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-animate.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-aria.min.js"></script>
-
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.5/angular-material.js"></script>
+		<script src="https://cdn.jsdelivr.net/angular-material-icons/0.4.0/angular-material-icons.min.js"></script>
 
-		<script src="https://cdn.jsdelivr.net/angular-material-icons/0.4.0/angular-material-icons.min.js"></script> 
-
+		<!-- Gus Codes -->
 		<script type="text/javascript" src="js/fontsRequests.js"></script>
-
 		<script type="text/javascript" src="js/demo.js"></script>
 	</body>
 </html>
