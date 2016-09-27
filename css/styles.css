@@ -1,3 +1,25 @@
+md-content.md-default-theme {
+  background-color:  #ededed;
+}
+md-divider{
+  color:  #ededed;
+}
+
+md-toolbar:not(.md-hue-1),
+.md-fab {
+  fill: #fff;
+}
+
+md-sidenav{
+  background-color: #000 !important;
+}
+
+
+
+
+/* SPINER */
+
+
 /* WebKit and Opera browsers */
 @-webkit-keyframes spinner {
   from { -webkit-transform: rotateY(0deg);    }
@@ -91,3 +113,5 @@
 .wf-active h1, .wf-inactive h1 {
   visibility: visible; font-family: 'Cantarell';
 }
+
+
