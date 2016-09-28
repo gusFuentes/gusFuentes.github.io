@@ -240,7 +240,7 @@ md-toolbar {
     z-index: 5; /* slide over group 2 */
   }
   #group1 .parallax__layer--base {
-    background: rgb(102,204,102);
+    background: url(../img/img01.jpg) center;
   }
 
   #group2 {
@@ -248,10 +248,6 @@ md-toolbar {
   }
   #group2 .parallax__layer--back {
     background: url(../img/img02.jpg) center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
   }
 
   #group3 {
@@ -287,4 +283,11 @@ md-toolbar {
   }
   #group7 .parallax__layer--base {
     background: rgb(255,241,100);
+  }
+
+  #group1 .parallax__layer--base, #group2 .parallax__layer--back, #group3 .parallax__layer--base, #group5 .parallax__layer--base, #group6 .parallax__layer--back, #group7 .parallax__layer--base {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
