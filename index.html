@@ -14,15 +14,15 @@
 
 		<div layout="column" class="relative" layout-fill role="main">
 			<md-button class="md-fab md-fab-bottom-right" aria-label="Add" ng-click="showAdd($event)">
-			<ng-md-icon icon="add"></ng-md-icon>
+				<ng-md-icon icon="add"></ng-md-icon>
 			</md-button>
 
 			<md-toolbar>
 				<div class="md-toolbar-tools">
-					<md-button class="md-fab md-mini" ng-click="toggleSidenav('left')" hide-gt-md aria-label="Menu" >
+					<md-button class="menuButton md-fab md-mini" ng-click="toggleSidenav('left')" hide-gt-md aria-label="Menu" >
 					<ng-md-icon icon="menu"></ng-md-icon>
 					</md-button>
-					<img src="img/logo.svg" style="width:250px; "></img>
+					<img src="img/logo.svg" style="width:250px; margin: 0 auto"></img>
 				</div>
 			</md-toolbar>
 
@@ -40,7 +40,7 @@
 						<div class="title">Base Layer group 2</div>
 					</div>
 					<div class="parallax__layer parallax__layer--back">
-						<div class="title">Background Layer group 2</div>			
+						<div class="title"></div>			
 					</div>
 				</div>
 
@@ -62,7 +62,7 @@
 					</div>
 					<div class="parallax__layer parallax__layer--deep">
 						<div class="title">Deep Background Layer 4</div>
-						<div id="stage" style="background: rgba(0,0,0,0); width:500px !important; height: 500px; z-index: 6666;">
+						<div id="stage" style="background: rgba(0,0,0,0); width:80% !important; height: 500px; z-index: 6666;">
 							<img class="spinner" src="img/image.svg" style="width:100%; "></img>
 							<img class="spinner spinnerDegrees" src="img/image.svg" style="width:100%; "></img>
 						</div>

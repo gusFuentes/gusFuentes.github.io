@@ -12,6 +12,22 @@ md-toolbar:not(.md-hue-1),
 
 md-sidenav{
   background-color: #000 !important;
+  width: 100% !important;
+  min-width: 100% !important;
+  margin-top: 64px !important;
+}
+
+md-backdrop, md-dialog-container{
+  margin-top: 64px !important;
+}
+
+div md-dialog-container ng-scope{
+  top: 64px !important;
+}
+
+md-dialog{
+  top: 64px !important;
+  width: 80% !important;
 }
 
 md-backdrop {
@@ -26,8 +42,13 @@ md-toolbar {
   background-color: #fff !important;
 }
 
+.md-toolbar-tools .md-button {
+  font-size: 24px !important;
+}
 
-
+.md-fab-bottom-right {
+  font-size: 30px !important
+}
 /* SPINER */
 
 
@@ -121,7 +142,7 @@ md-toolbar {
   visibility: hidden; 
 }
 
-.wf-active h1, .wf-inactive h1 {
+.wf-active h1, .wf-inactive h1, .title {
   visibility: visible; font-family: 'Cantarell';
 }
 
@@ -207,6 +228,7 @@ md-toolbar {
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    color: #fff;
   }
 
 
@@ -225,7 +247,11 @@ md-toolbar {
     z-index: 3; /* slide under groups 1 and 3 */
   }
   #group2 .parallax__layer--back {
-    background: rgb(123,210,102);
+    background: url(../img/img02.jpg) center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
   #group3 {
