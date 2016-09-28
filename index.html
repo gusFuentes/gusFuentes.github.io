@@ -8,18 +8,19 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
 	</head>
 	<body layout="row" ng-controller="AppCtrl">
-		<md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
-			<h1 class="wf-loading" style="color: #fff">Font loader text</h1>
+		<md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
+			<h1 class="wf-loading" style="color: #fff">Sección 1</h1>
+			<h1 class="wf-loading" style="color: #fff">Sección 2</h1>
 		</md-sidenav>
 
 		<div layout="column" class="relative" layout-fill role="main">
 			<md-button class="md-fab md-fab-bottom-right" aria-label="Add" ng-click="showAdd($event)">
-				<ng-md-icon icon="add"></ng-md-icon>
+				<ng-md-icon icon="email"></ng-md-icon>
 			</md-button>
 
 			<md-toolbar>
 				<div class="md-toolbar-tools">
-					<md-button class="menuButton md-fab md-mini" ng-click="toggleSidenav('left')" hide-gt-md aria-label="Menu" >
+					<md-button class="menuButton md-fab md-mini" ng-click="toggleSidenav('left')" aria-label="Menu" >
 					<ng-md-icon icon="menu"></ng-md-icon>
 					</md-button>
 					<img src="img/logo.svg" style="width:250px; margin: 0 auto"></img>
@@ -31,13 +32,13 @@
 			<div class="parallax">
 				<div id="group1" class="parallax__group">
 					<div class="parallax__layer parallax__layer--base">
-						<div class="title">Base Layer group 1</div>
+						<h3 class="title wf-loading">Sección 1</h3>
 					</div>
 				</div>
 
 				<div id="group2" class="parallax__group">
 					<div class="parallax__layer parallax__layer--base">
-						<div class="title">Base Layer group 2</div>
+						<h3 class="title wf-loading">Sección 2</h3>
 					</div>
 					<div class="parallax__layer parallax__layer--back">
 						<div class="title"></div>			
