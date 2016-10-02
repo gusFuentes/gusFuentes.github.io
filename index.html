@@ -11,11 +11,23 @@
 	</head>
 	<body layout="row" ng-controller="AppCtrl">
 		<md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
-			<h1 class="wf-loading" style="color: #fff">About</h1>
-			<h1 class="wf-loading" style="color: #fff">Works</h1>
-			<h1 class="wf-loading" style="color: #fff">Videogames</h1>
-			<h1 class="wf-loading" style="color: #fff">Experiments</h1>
-			<h1 class="wf-loading" style="color: #fff">Mixed Media</h1>
+			<div class="sidenavContainer" layout="column" layout-align="center center">
+				<button class="sidenavButton" ng-click="">
+					<h1 class="wf-loading" style="color: #fff">About</h1>
+				</button>
+				<button class="sidenavButton" ng-click="">
+					<h1 class="wf-loading" style="color: #fff">Works</h1>
+				</button>
+				<button class="sidenavButton" ng-click="">
+					<h1 class="wf-loading" style="color: #fff">Videogames</h1>
+				</button>
+				<button class="sidenavButton" ng-click="">
+					<h1 class="wf-loading" style="color: #fff">Experiments</h1>
+				</button>
+				<button class="sidenavButton" ng-click="">
+					<h1 class="wf-loading" style="color: #fff">Mixed Media</h1>
+				</button>
+			</div>
 		</md-sidenav>
 
 		<div layout="column" class="relative" layout-fill role="main">
@@ -25,10 +37,10 @@
 
 			<md-toolbar>
 				<div class="md-toolbar-tools">
-					<md-button class="menuButton md-fab md-mini" ng-click="toggleSidenav('left')" aria-label="Menu" >
-					<ng-md-icon icon="menu"></ng-md-icon>
-					</md-button>
-					<img src="img/logo.svg" style="width:250px; margin: 0 auto"></img>
+					<button class="c-hamburger c-hamburger--htx" ng-click="toggleSidenav('left')">
+					  <span>toggle menu</span>
+					</button>
+					<img src="img/logo.svg" style="width:250px; margin: 0 auto"></img>				
 				</div>
 			</md-toolbar>
 
@@ -112,6 +124,7 @@
 		<!-- Gus Codes -->
 		<script type="text/javascript" src="js/fontsRequests.js"></script>
 		<script type="text/javascript" src="js/demo.js"></script>
+		<script type="text/javascript" src="js/misc.js"></script>
 	</body>
 </html>
 
