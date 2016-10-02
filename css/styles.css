@@ -155,7 +155,7 @@ md-sidenav{
   height: 81px;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 13px;
+  padding-top: 16px;
   display: block;
   position: relative;
 }
@@ -164,11 +164,16 @@ md-sidenav{
   color: #fff;
   background-color: #000;
   transform: translate3d(0px,0px,0px);
+  -ms-transform: translate3d(0px,0px,0px); /* IE 9 */
+  -webkit-transform: translate3d(0px,0px,0px); /* Chrome, Safari, Opera */
   transition: transform .2s ease-in-out;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
 }
 
 .sidenavButton div:hover {
   transform: translate3d(0px,-74px,0px);
+  -ms-transform: translate3d(0px,-74px,0px); /* IE 9 */
+  -webkit-transform: translate3d(0px,-74px,0px); /* Chrome, Safari, Opera */
   color: #000;
   background-color: #fff;
 }
@@ -302,7 +307,8 @@ md-toolbar {
 }
 
 .wf-active h1, .wf-inactive h1, .title {
-  visibility: visible; font-family: 'Cantarell';
+  visibility: visible; 
+  font-family: 'Montserrat Alternates';
 }
 
 

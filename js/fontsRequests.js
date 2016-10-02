@@ -1,5 +1,5 @@
 WebFont.load({
 	google: {
-	  families: ['Cantarell']
+	  families: ['Montserrat Alternates']
 	}
 });
