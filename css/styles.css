@@ -167,7 +167,7 @@ md-sidenav{
   -ms-transform: translate3d(0px,0px,0px); /* IE 9 */
   -webkit-transform: translate3d(0px,0px,0px); /* Chrome, Safari, Opera */
   transition: transform .2s ease-in-out;
-  -webkit-transition: -webkit-transform .2s ease-in-out;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
 }
 
 .sidenavButton div:hover {
