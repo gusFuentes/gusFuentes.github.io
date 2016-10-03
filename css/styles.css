@@ -1,5 +1,6 @@
 body, html {
   overflow: hidden;
+  background: #000;
 }
 
 body {
@@ -246,6 +247,18 @@ md-toolbar {
   -moz-perspective: 1200px;
   -ms-perspective: 1200px;
   perspective: 1200px;
+  padding-top: 40%;
+  background: rgba(0,0,0,0);
+  width:70%; 
+  height: 500px; 
+  z-index: 6666;
+}
+
+@media (min-width: 700px) {
+  #stage {
+    padding-top: 0;
+    width:80%; 
+  }
 }
 
 .spinner {
@@ -358,7 +371,7 @@ md-toolbar {
 }
 
 .parallax__layer--deep {
-  -webkit-transform: translateZ(-600px) scale(3.05);
+  -webkit-transform: translateZ(-600px) scale(3.1);
   transform: translateZ(-600px) scale(3.05);
   z-index: 2;
 }
@@ -415,6 +428,7 @@ md-toolbar {
 }
 #group4 .parallax__layer--deep {
   background: rgb(184,223,101);
+  overflow: hidden;
 }
 
 #group5 {
