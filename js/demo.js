@@ -47,12 +47,12 @@ app.directive( 'goClick', function ( $location, $mdSidenav ) {
 app.config(function($mdThemingProvider) {
 $mdThemingProvider.definePalette('customPalette', {
 	'50': 'ffebee',
-	'100': 'ffffff',
+	'100': '000000',
 	'200': 'ef9a9a',
 	'300': 'e57373',
 	'400': 'ef5350',
 	'500': 'f44336',
-	'600': 'ffffff',
+	'600': '000000',
 	'700': 'd32f2f',
 	'800': 'c62828',
 	'900': 'b71c1c',
@@ -127,7 +127,7 @@ app.config(function($routeProvider) {
 });
 
 app.controller('HomeController', function($scope) {
-  $scope.message = 'Hello from HomeController';
+  $scope.message = 'Welcome to my portfoil';
 });
 
 app.controller('WorksController', function($scope) {

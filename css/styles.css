@@ -331,13 +331,32 @@ md-button {
   position: absolute;
 }
 
-.wf-loading h1 { 
+
+/* Fonts Management */
+
+.wf-loading * { 
   visibility: hidden; 
 }
 
 .wf-active h1, .wf-inactive h1, .title {
   visibility: visible; 
   font-family: 'Montserrat Alternates';
+}
+
+.introTitle{
+  font-family: 'Montserrat Alternates';
+  color: #000;
+}
+
+.introP{
+  font-family: 'Kalam';
+  font-size: 20px; /*15px smaller devices*/
+  line-height: 1.6;
+  color: #000;
+}
+
+#profileTextContainer {
+  padding: 25px;
 }
 
 
@@ -387,7 +406,7 @@ md-button {
 }
 
 .parallax__layer--deep {
-  -webkit-transform: translateZ(-600px) scale(3.1);
+  -webkit-transform: translateZ(-600px) scale(3.2);
   transform: translateZ(-600px) scale(3.05);
   z-index: 2;
 }
@@ -398,7 +417,7 @@ md-button {
 
 /* demo styles */
 
-.parallax {
+.parallax .title {
   font-size: 200%;
 }
 
@@ -422,7 +441,7 @@ md-button {
   z-index: 5; /* slide over group 2 */
 }
 #group1 .parallax__layer--base {
-  background: url(../img/img01.jpg) center;
+  background: #fff;
 }
 
 #group2 {
@@ -473,4 +492,8 @@ md-button {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+#group2, #group3, #group4, #group5 {
+  cursor: pointer;
 }

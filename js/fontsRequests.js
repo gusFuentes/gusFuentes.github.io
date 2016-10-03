@@ -1,5 +1,5 @@
 WebFont.load({
 	google: {
-	  families: ['Montserrat Alternates']
+	  families: ['Montserrat Alternates', 'Kalam']
 	}
 });
