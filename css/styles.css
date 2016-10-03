@@ -492,6 +492,7 @@ md-button {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  overflow: hidden;
 }
 
 #group2, #group3, #group4, #group5 {
