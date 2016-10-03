@@ -212,6 +212,22 @@ md-toolbar {
   font-size: 30px !important
 }
 
+.tolowercase {
+    text-transform: lowercase !important;
+}
+
+.tocapitalize {
+    text-transform: capitalize !important;
+}
+
+md-button {    
+  text-transform: capitalize !important;/*For Lower case use lowercase*/
+}
+
+.md-button:not([disabled]):hover, .md-button[disabled] {
+  color : #900;
+  background-color: #fff;
+}
 
 
 /* SPINER */
