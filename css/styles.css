@@ -244,70 +244,8 @@ md-button {
   cursor: pointer;
 }
 
-/* MEDIA QUERYS */
-
-@media screen and (min-width: 1920px) {
-  #menuBtn {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  #menuBtn {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #toolbarBtnsContainer {
-    display: none;
-  }
-  #myLogo {
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  #menuBtn {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  #toolbarBtnsContainer {
-    display: none;
-  }
-  #myLogo {
-    margin: 0 auto;
-    margin-left: 57px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  #toolbarBtnsContainer {
-    display: none;
-  }
-  #myLogo {
-    margin: 0 auto;
-    margin-left: 35px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  #toolbarBtnsContainer {
-    display: none;
-  }
-  #myLogo {
-    padding-left: 16px;
-    margin-left: 0;
-  }
-}
-  
-
 
 /* SPINER */
-
-
 /* WebKit and Opera browsers */
 @-webkit-keyframes spinner {
   from { -webkit-transform: rotateY(0deg);    }
@@ -490,10 +428,22 @@ md-button {
 
 
 
-/* demo styles */
+/* parallax titles styles */
 
-.parallax .title {
-  font-size: 200%;
+#worksTitle, #gamesTitle, #sandboxTitle, #artsTitle {
+  font-weight: bold;
+}
+#worksTitle{
+  font-size: 25vw;
+}
+#gamesTitle {
+  font-size: 22vw;
+}
+#sandboxTitle{
+  font-size: 17vw;
+}
+#artsTitle {
+  font-size: 18vw;
 }
 
  /* centre the content in the parallax layers */
@@ -572,4 +522,63 @@ md-button {
 
 #group2, #group3, #group4, #group5 {
   cursor: pointer;
+}
+
+/* MEDIA QUERYS */
+
+@media screen and (min-width: 1920px) {
+  #menuBtn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #menuBtn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #toolbarBtnsContainer {
+    display: none;
+  }
+  #myLogo {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #menuBtn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #toolbarBtnsContainer {
+    display: none;
+  }
+  #myLogo {
+    margin: 0 auto;
+    margin-left: 57px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #toolbarBtnsContainer {
+    display: none;
+  }
+  #myLogo {
+    margin: 0 auto;
+    margin-left: 35px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #toolbarBtnsContainer {
+    display: none;
+  }
+  #myLogo {
+    padding-left: 16px;
+    margin-left: 0;
+  }
 }
