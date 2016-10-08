@@ -43,7 +43,7 @@
 
 				<div id="group4" class="parallax__group" go-click="experiments">
 					<div class="parallax__layer parallax__layer--base">
-						<div class="title wf-loading">Experiments</div>
+						<div class="title wf-loading">Sandbox</div>
 					</div>
 					<div class="parallax__layer parallax__layer--back">
 					</div>
@@ -58,7 +58,7 @@
 
 				<div id="group5" class="parallax__group" go-click="mixedmedia">
 					<div class="parallax__layer parallax__layer--fore">
-						<div class="title wf-loading">Mixed Media</div>
+						<div class="title wf-loading">Arts</div>
 					</div>
 					<div class="parallax__layer parallax__layer--base">
 						<div class="title"></div>
@@ -67,6 +67,10 @@
 			</div>
 	    </script>
 
+	    <script type="text/ng-template" id="pages/about.html">
+	      <h1>About</h1>
+	      <h3>{{message}}</h3>
+	    </script>
 	    <script type="text/ng-template" id="pages/works.html">
 	      <h1>Works</h1>
 	      <h3>{{message}}</h3>
@@ -76,20 +80,20 @@
 	      <h3>{{message}}</h3>
 	    </script>
 	    <script type="text/ng-template" id="pages/experiments.html">
-	      <h1>Experiments</h1>
+	      <h1>Sandbox</h1>
 	      <h3>{{message}}</h3>
 	    </script>
 	    <script type="text/ng-template" id="pages/mixedmedia.html">
-	      <h1>Mixed Media</h1>
+	      <h1>Arts</h1>
 	      <h3>{{message}}</h3>
 	    </script>
 
 		<md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
 			<div class="sidenavContainer" layout="column" layout-align="center center">
-				<button class="sidenavButton" go-click="/" ng-click="toggleSidenav('left')">
+				<button class="sidenavButton" go-click="about" ng-click="toggleSidenav('left')">
 					<div>
-						<h1 class="wf-loading">Home</h1>
-						<h1 class="wf-loading">Home</h1>
+						<h1 class="wf-loading">About</h1>
+						<h1 class="wf-loading">About</h1>
 					</div>
 				</button>
 				<button class="sidenavButton" go-click="works" ng-click="toggleSidenav('left')">
@@ -100,20 +104,20 @@
 				</button>
 				<button class="sidenavButton" go-click="videogames" ng-click="toggleSidenav('left')">
 					<div>
-						<h1 class="wf-loading">Videogames</h1>
-						<h1 class="wf-loading">Videogames</h1>
+						<h1 class="wf-loading">Games</h1>
+						<h1 class="wf-loading">Games</h1>
 					</div>
 				</button>
 				<button class="sidenavButton" go-click="experiments" ng-click="toggleSidenav('left')">
 					<div>
-						<h1 class="wf-loading">Experiments</h1>
-						<h1 class="wf-loading">Experiments</h1>
+						<h1 class="wf-loading">Sandbox</h1>
+						<h1 class="wf-loading">Sandbox</h1>
 					</div>
 				</button>
 				<button class="sidenavButton" go-click="mixedmedia" ng-click="toggleSidenav('left')">
 					<div>
-						<h1 class="wf-loading">Mixed Media</h1>
-						<h1 class="wf-loading">Mixed Media</h1>
+						<h1 class="wf-loading">Arts</h1>
+						<h1 class="wf-loading">Arts</h1>
 					</div>
 				</button>
 			</div>
@@ -125,11 +129,19 @@
 			</md-button>
 
 			<md-toolbar>
-				<div class="md-toolbar-tools">
-					<button class="c-hamburger c-hamburger--htx" ng-click="toggleSidenav('left')">
+				<div class="md-toolbar-tools"  layout-align="space-between center">
+					<button id="menuBtn" class="c-hamburger c-hamburger--htx" ng-click="toggleSidenav('left')">
 					  <span>toggle menu</span>
 					</button>
-					<img src="img/logo.svg" style="width:250px; margin: 0 auto"></img>				
+					<img id="myLogo" src="img/logo.svg" go-click="/"></img>
+
+					<div id="toolbarBtnsContainer">
+						<span class="wf-loading toolbarBtn" go-click="about">about</span>
+						<span class="wf-loading toolbarBtn" go-click="works">works</span>
+						<span class="wf-loading toolbarBtn" go-click="videogames">games</span>
+						<span class="wf-loading toolbarBtn" go-click="experiments">sandbox</span>
+						<span class="wf-loading toolbarBtn" go-click="mixedmedia">arts</span>
+					</div>			
 				</div>
 			</md-toolbar>
 

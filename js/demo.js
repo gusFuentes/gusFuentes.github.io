@@ -103,6 +103,11 @@ app.config(function($routeProvider) {
     controller  : 'HomeController'
   })
 
+  .when('/about', {
+    templateUrl : 'pages/about.html',
+    controller  : 'AboutController'
+  })
+
   .when('/works', {
     templateUrl : 'pages/works.html',
     controller  : 'WorksController'
@@ -128,6 +133,10 @@ app.config(function($routeProvider) {
 
 app.controller('HomeController', function($scope) {
   $scope.message = 'Welcome to my portfoil';
+});
+
+app.controller('AboutController', function($scope) {
+  $scope.message = 'Hello from AboutController';
 });
 
 app.controller('WorksController', function($scope) {

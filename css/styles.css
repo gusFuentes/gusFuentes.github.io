@@ -179,6 +179,12 @@ md-sidenav{
   background-color: #fff;
 }
 
+.toolbarBtn{
+  margin-left:5px; 
+  margin-right:5px;
+  cursor: pointer;
+} 
+
 md-backdrop, md-dialog-container{
   margin-top: 64px !important;
 }
@@ -228,6 +234,75 @@ md-button {
   color : #900;
   background-color: #fff;
 }
+
+#menuBtn{
+  min-width: 40px !important;
+}
+
+#myLogo{
+  width:250px;
+  cursor: pointer;
+}
+
+/* MEDIA QUERYS */
+
+@media screen and (min-width: 1920px) {
+  #menuBtn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #menuBtn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #toolbarBtnsContainer {
+    display: none;
+  }
+  #myLogo {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #menuBtn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #toolbarBtnsContainer {
+    display: none;
+  }
+  #myLogo {
+    margin: 0 auto;
+    margin-left: 57px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #toolbarBtnsContainer {
+    display: none;
+  }
+  #myLogo {
+    margin: 0 auto;
+    margin-left: 35px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #toolbarBtnsContainer {
+    display: none;
+  }
+  #myLogo {
+    padding-left: 16px;
+    margin-left: 0;
+  }
+}
+  
 
 
 /* SPINER */
@@ -343,7 +418,7 @@ md-button {
   font-family: 'Montserrat Alternates';
 }
 
-.introTitle{
+.introTitle, .toolbarBtn{
   font-family: 'Montserrat Alternates';
   color: #000;
 }
