@@ -466,21 +466,21 @@ md-button {
   z-index: 5; /* slide over group 2 */
 }
 #group1 .parallax__layer--base {
-  background: #fff;
+  background: #000;
 }
 
 #group2 {
   z-index: 3; /* slide under groups 1 and 3 */
 }
 #group2 .parallax__layer--back {
-  background: url(../img/img02.jpg) center;
+  background: url(../img/img02.png) center;
 }
 
 #group3 {
   z-index: 4; /* slide over group 2 and 4 */
 }
 #group3 .parallax__layer--base {
-  background: rgb(153,216,101);
+  background: url(../img/img03.jpg) center;
 }
 
 #group4 {
@@ -495,7 +495,7 @@ md-button {
   z-index: 3; /* slide over group 4 and 6 */
 }
 #group5 .parallax__layer--base {
-  background: rgb(214,229,100);
+  background: url(../img/img05.jpg) center;
 }
 
 #group6 {
