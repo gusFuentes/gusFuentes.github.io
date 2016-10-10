@@ -12,6 +12,10 @@ body {
   padding:0;
 }
 
+#contentContainer{
+  overflow-y: scroll;
+}
+
 .c-hamburger {
   display: block;
   position: relative;
@@ -457,7 +461,37 @@ md-button {
   color: #fff;
 }
 
+/* Gallery styles */
 
+section#imagen{
+  display: inline-block;
+  border-radius: 0.25em;
+}
+
+section#div2,section#div3,section#div4,section#div5,section#div6{
+  background-color: #fff;
+  color: #fff;
+  padding: 1em 0 1em 0; 
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.fancybox-skin{
+  width: auto !important;
+  height: auto !important;
+}
+
+.fancybox-outer{
+  margin: 0 auto !important;
+  width: 100% !important;
+}
+
+.fancybox-inner{
+  width: 100% !important;
+  height: auto !important;
+}
 
 /* style the groups
 --------------------------------------------- */
@@ -580,5 +614,9 @@ md-button {
   #myLogo {
     padding-left: 16px;
     margin-left: 0;
+  }
+  div.fancybox-wrap.fancybox-desktop.fancybox-type-image.fancybox-opened{
+    width: 90% !important;
+    height: auto !important;
   }
 }
