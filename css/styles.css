@@ -605,6 +605,10 @@ section#div2,section#div3,section#div4,section#div5,section#div6{
     margin: 0 auto;
     margin-left: 35px;
   }
+  div.fancybox-wrap.fancybox-desktop.fancybox-type-image.fancybox-opened{
+    width: 90% !important;
+    height: auto !important;
+  }
 }
 
 @media screen and (max-width: 320px) {
