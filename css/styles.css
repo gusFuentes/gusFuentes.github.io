@@ -13,7 +13,7 @@ body {
 }
 
 #contentContainer{
-  overflow-y: scroll;
+  /*overflow-y: auto;*/
 }
 
 .c-hamburger {
@@ -466,9 +466,10 @@ md-button {
 section#imagen{
   display: inline-block;
   border-radius: 0.25em;
+  height: 50px;
 }
 
-section#div2,section#div3,section#div4,section#div5,section#div6{
+#div2,#div3,#div4,#div5,#div6{
   background-color: #fff;
   color: #fff;
   padding: 1em 0 1em 0; 
@@ -476,6 +477,10 @@ section#div2,section#div3,section#div4,section#div5,section#div6{
   margin: 0 auto;
   margin-bottom: 1em;
   text-align: center;
+}
+
+.redonda {
+  border-radius: 1em;
 }
 
 .fancybox-skin{
