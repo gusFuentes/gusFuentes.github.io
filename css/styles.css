@@ -461,7 +461,7 @@ md-button {
   color: #fff;
 }
 
-#arts{
+#arts, #sandbox{
   width: 100%;
   margin: 0 auto;
 }
@@ -485,6 +485,12 @@ md-button {
   background: -webkit-linear-gradient(-45deg, #beae60 0%, #beae60 100%);
   background: linear-gradient(135deg, #beae60 0%, #beae60 100%);
   margin-bottom: 50px;
+}
+
+.penContainer{
+  width: 100%;
+  max-width: 752px;
+  margin: 0 auto;
 }
 
 /* Gallery styles */

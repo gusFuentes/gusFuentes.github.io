@@ -91,11 +91,17 @@
 	    </script>
 
 	    <script type="text/ng-template" id="pages/experiments.html">
-		    <section class="innerSectionInfo">
-		      	<h1 class="innerSectionTitle">Sandbox</h1>
-		      	<div class="block"></div>
-		      	<p class="innerSectionP">{{message}}</p>		      	
-	      	</section>
+		    <md-content id="sandbox">
+			    <section class="innerSectionInfo">
+			      	<h1 class="innerSectionTitle">Sandbox</h1>
+			      	<div class="block"></div>
+			      	<p class="innerSectionP">{{message}}</p>		      	
+		      	</section>
+		      	<div class="penContainer">		      	
+			      	<p data-height="800" data-theme-id="light" data-slug-hash="ALLyyd" data-default-tab="result" data-user="Guxthav" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/Guxthav/pen/ALLyyd/">Fractal Tree Pure Canvas</a> by Gustavo Fuentes (<a href="http://codepen.io/Guxthav">@Guxthav</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+					<script async src="http://assets.codepen.io/assets/embed/ei.js"></script>
+				</div>
+	      	</md-content>
 	    </script>
 
 	    <script type="text/ng-template" id="pages/mixedmedia.html">
@@ -294,11 +300,11 @@
 					<img id="myLogo" src="img/logo.svg" go-click="/"></img>
 
 					<div id="toolbarBtnsContainer">
-						<span class="wf-loading toolbarBtn" go-click="about">about</span>
-						<span class="wf-loading toolbarBtn" go-click="works">works</span>
-						<span class="wf-loading toolbarBtn" go-click="videogames">games</span>
-						<span class="wf-loading toolbarBtn" go-click="experiments">sandbox</span>
-						<span class="wf-loading toolbarBtn" go-click="mixedmedia">arts</span>
+						<span class="wf-loading toolbarBtn" go-click="about">About</span>
+						<span class="wf-loading toolbarBtn" go-click="works">Works</span>
+						<span class="wf-loading toolbarBtn" go-click="videogames">Games</span>
+						<span class="wf-loading toolbarBtn" go-click="experiments">Sandbox</span>
+						<span class="wf-loading toolbarBtn" go-click="mixedmedia">Arts</span>
 					</div>			
 				</div>
 			</md-toolbar>
