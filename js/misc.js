@@ -2,18 +2,22 @@
 
   "use strict";
 
-  var toggles = document.querySelectorAll(".c-hamburger");
+  var toggles = $(".c-hamburger");
+  var closeMenuObjects = $(".sidenavButton");
 
-  for (var i = toggles.length - 1; i >= 0; i--) {
-    var toggle = toggles[i];
+  toggleHandler(toggles[0]);
+
+   for (var i = closeMenuObjects.length - 1; i >= 0; i--) {
+    var toggle = closeMenuObjects[i];
     toggleHandler(toggle);
   };
 
   function toggleHandler(toggle) {
     toggle.addEventListener( "click", function(e) {
       e.preventDefault();
-      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+      (toggles[0].classList.contains("is-active") === true) ? toggles[0].classList.remove("is-active") : toggles[0].classList.add("is-active");
     });
   }
 
 })();
+
