@@ -189,6 +189,10 @@ md-sidenav{
   cursor: pointer;
 } 
 
+.buttonFocus{
+  border-bottom: 2px solid #000;
+}
+
 md-backdrop, md-dialog-container{
   margin-top: 64px !important;
 }

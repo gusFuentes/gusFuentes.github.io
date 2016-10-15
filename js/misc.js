@@ -7,7 +7,7 @@
 
   toggleHandler(toggles[0]);
 
-   for (var i = closeMenuObjects.length - 1; i >= 0; i--) {
+  for (var i = closeMenuObjects.length - 1; i >= 0; i--) {
     var toggle = closeMenuObjects[i];
     toggleHandler(toggle);
   };
@@ -21,3 +21,22 @@
 
 })();
 
+
+var toolbarBtns = $(".toolbarBtn");
+
+for (var i = toolbarBtns.length - 1; i >= 0; i--) {
+  var buttonFocused = toolbarBtns[i];
+  focusHandler(buttonFocused, i);
+};
+
+function focusHandler(buttonFocused, index) {
+  buttonFocused.addEventListener( "click", function(e) {
+    e.preventDefault(); 
+
+    for (var i = toolbarBtns.length - 1; i >= 0; i--) {
+      toolbarBtns[i].classList.remove('buttonFocus');
+    };
+
+    toolbarBtns[index].classList.add('buttonFocus');
+  });
+}
