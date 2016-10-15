@@ -4,6 +4,11 @@ app.controller('AppCtrl', ['$scope', '$mdBottomSheet', '$mdSidenav', '$mdDialog'
   $scope.toggleSidenav = function(menuId) {
     $mdSidenav(menuId).toggle();
   };
+
+  $scope.closeSidenav = function(menuId) {
+    $mdSidenav(menuId).close();
+    removeMenuBtnCloseIcon();
+  };
   
   $scope.showAdd = function(ev) {
     $mdDialog.show({

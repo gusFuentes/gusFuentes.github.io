@@ -390,6 +390,7 @@ md-button {
   overflow-y: auto;
   -webkit-perspective: 300px;
   perspective: 300px;
+  margin-bottom: -23px;
 }
 
 .parallax__group {
