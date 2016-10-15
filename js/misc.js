@@ -31,12 +31,14 @@ for (var i = toolbarBtns.length - 1; i >= 0; i--) {
 
 function focusHandler(buttonFocused, index) {
   buttonFocused.addEventListener( "click", function(e) {
-    e.preventDefault(); 
-
-    for (var i = toolbarBtns.length - 1; i >= 0; i--) {
-      toolbarBtns[i].classList.remove('buttonFocus');
-    };
-
+    e.preventDefault();
+    unselectToolbarButtons();
     toolbarBtns[index].classList.add('buttonFocus');
   });
+}
+
+function unselectToolbarButtons() {
+  for (var i = toolbarBtns.length - 1; i >= 0; i--) {
+    toolbarBtns[i].classList.remove('buttonFocus');
+  };
 }
