@@ -376,6 +376,11 @@ md-button {
   color: #000;
 }
 
+.firstInnerSectionP::first-letter { 
+    font-size: 165%;
+    line-height: 10px;
+    font-family: 'Montserrat Alternates'
+}
 #profileTextContainer {
   padding: 25px;
 }
