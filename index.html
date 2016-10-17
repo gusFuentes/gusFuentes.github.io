@@ -20,7 +20,7 @@
 		<script type="text/ng-template" id="pages/home.html">
 		    <div class="parallax">
 				<div id="group1" class="parallax__group">
-					<div class="parallax__layer parallax__layer--base">
+					<div class="parallax__layer parallax__layer--base" go-click="about">
 						<div id="worksTitle" class="title wf-loading">About</div>
 					</div>
 				</div>
@@ -80,7 +80,196 @@
 					<br />
 					<p class="innerSectionP wf-loading">	
 						I'm located in my hometown Bogotá, Colombia.
-					</p> 	
+					</p>
+					<br />
+
+					<h1 class="innerSectionTitle wf-loading">Skills</h1>
+					<div class="block"></div>
+					<div layout="row" layout-md="column" layout-sm="column" layout-xs="column">
+						<div layout="row" layout-sm="column" layout-xs="column">
+							<div class="skillGroup">
+								<h2 class="innerSectionSubtitle wf-loading">Programs:</h2>
+								<div class="skillContainer" layout="row" layout-align="start center">
+									<img class="skillIcon" src="img/aiIcon.jpg"></img>
+									<div class="skillText"><p> Illustrator </p></div>
+									<div class="skillBar">
+										<div id="skill01"></div>
+									</div>
+								</div>
+
+								<div class="skillContainer" layout="row" layout-align="start center">
+									<img class="skillIcon" src="img/psIcon.jpg"></img>
+									<div class="skillText"><p> Photoshop </p></div>
+									<div class="skillBar">
+										<div id="skill02"></div>
+									</div>
+								</div>
+
+								<div class="skillContainer" layout="row" layout-align="start center">
+									<img class="skillIcon" src="img/aeIcon.jpg"></img>
+									<div class="skillText"><p> After Effects </p></div>
+									<div class="skillBar">
+										<div id="skill03"></div>
+									</div>
+								</div>
+
+								<div class="skillContainer" layout="row" layout-align="start center">
+									<img class="skillIcon" src="img/aanIcon.jpg"></img>
+									<div class="skillText"><p> Animate (Flash) </p></div>
+									<div class="skillBar">
+										<div id="skill04"></div>
+									</div>
+								</div>
+
+								<div class="skillContainer" layout="row" layout-align="start center">
+									<img class="skillIcon" src="img/balIcon.jpg"></img>
+									<div class="skillText"><p> Balsamiq </p></div>
+									<div class="skillBar">
+										<div id="skill05"></div>
+									</div>
+								</div>
+
+								<div class="skillContainer" layout="row" layout-align="start center">
+									<img class="skillIcon" src="img/stIcon.jpg"></img>
+									<div class="skillText"><p> Sublime Text </p></div>
+									<div class="skillBar">
+										<div id="skill06"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="skillGroup">
+								<h2 class="innerSectionSubtitle wf-loading">Frameworks:</h2>
+								<div class="skillContainer" layout="row" layout-align="start center">
+									<img class="skillIcon" src="img/anLogo.jpg"></img>
+									<div class="skillText"><p> Angular </p></div>
+									<div class="skillBar">
+										<div id="skill07"></div>
+									</div>
+								</div>
+
+								<div class="skillContainer" layout="row" layout-align="start center">
+									<img class="skillIcon" src="img/cjsIcon.jpg"></img>
+									<div class="skillText"><p> Create JS </p></div>
+									<div class="skillBar">
+										<div id="skill08"></div>
+									</div>
+								</div>
+
+								<div class="skillContainer" layout="row" layout-align="start center">
+									<img class="skillIcon" src="img/reactIcon.jpg"></img>
+									<div class="skillText"><p> React </p></div>
+									<div class="skillBar">
+										<div id="skill09"></div>
+									</div>
+								</div>
+
+								<div class="skillContainer" layout="row" layout-align="start center">
+									<img class="skillIcon" src="img/wfIcon.jpg"></img>
+									<div class="skillText"><p> Web Font Loader </p></div>
+									<div class="skillBar">
+										<div id="skill10"></div>
+									</div>
+								</div>
+
+								<div class="skillContainer" layout="row" layout-align="start center">
+									<img class="skillIcon" src="img/pjs.jpg"></img>
+									<div class="skillText"><p> Paper JS </p></div>
+									<div class="skillBar">
+										<div id="skill11"></div>
+									</div>
+								</div>
+
+								<div class="skillContainer" layout="row" layout-align="start center">
+									<img class="skillIcon" src="img/jquery.jpg"></img>
+									<div class="skillText"><p> JQuery </p></div>
+									<div class="skillBar">
+										<div id="skill12"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="skillGroup">
+							<h2 class="innerSectionSubtitle wf-loading">Concepts:</h2>
+							<div class="skillContainer" layout="row" layout-align="start center">
+								<img class="skillIcon" src="img/con1.jpg"></img>
+								<div class="skillText"><p> Composition </p></div>
+								<div class="skillBar">
+									<div id="skill13"></div>
+								</div>
+							</div>
+
+							<div class="skillContainer" layout="row" layout-align="start center">
+								<img class="skillIcon" src="img/con2.jpg"></img>
+								<div class="skillText"><p> Color Management </p></div>
+								<div class="skillBar">
+									<div id="skill14"></div>
+								</div>
+							</div>
+
+							<div class="skillContainer" layout="row" layout-align="start center">
+								<img class="skillIcon" src="img/con3.jpg"></img>
+								<div class="skillText"><p> Graphic synthesis </p></div>
+								<div class="skillBar">
+									<div id="skill15"></div>
+								</div>
+							</div>
+
+							<div class="skillContainer" layout="row" layout-align="start center">
+								<img class="skillIcon" src="img/con4.jpg"></img>
+								<div class="skillText"><p> Animation </p></div>
+								<div class="skillBar">
+									<div id="skill16"></div>
+								</div>
+							</div>
+
+							<div class="skillContainer" layout="row" layout-align="start center">
+								<img class="skillIcon" src="img/con5.jpg"></img>
+								<div class="skillText"><p> Clean code </p></div>
+								<div class="skillBar">
+									<div id="skill17"></div>
+								</div>
+							</div>
+
+							<div class="skillContainer" layout="row" layout-align="start center">
+								<img class="skillIcon" src="img/mat.jpg"></img>
+								<div class="skillText"><p> Material Design </p></div>
+								<div class="skillBar">
+									<div id="skill18"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br />
+					<h1 class="innerSectionTitle wf-loading">Academics</h1>
+			      	<div class="block"></div>
+			      	<h2 class="innerSectionSubtitle wf-loading">
+			      		Universidad Nacional de Colombia
+			      	</h2>
+			      	<p class="innerSectionP wf-loading">			      		
+			      		Professional Graphic Designer
+			      		<br />
+			      		June 2010
+					</p>
+					<br />
+					<h2 class="innerSectionSubtitle wf-loading">
+			      		Academia Nikola Tesla
+			      	</h2>
+			      	<p class="innerSectionP wf-loading">			      		
+			      		Basic Electronics
+			      		<br />
+			      		January 2015
+					</p>
+					<br />
+					<h2 class="innerSectionSubtitle wf-loading">
+			      		SENA
+			      	</h2>
+			      	<p class="innerSectionP wf-loading">			      		
+			      		Advanced Adobe Dreamweaver
+			      		<br />
+			      		March 2011
+					</p>
 		      	</section>
 	      	</md-content>
 	    </script>
