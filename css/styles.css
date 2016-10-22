@@ -650,6 +650,7 @@ div#imagen{
 .fancybox-skin{
   width: auto !important;
   height: auto !important;
+  padding: 0 !important;
 }
 
 .fancybox-outer{
