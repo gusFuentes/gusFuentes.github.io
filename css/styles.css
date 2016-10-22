@@ -388,8 +388,12 @@ md-button {
   padding: 25px;
 }
 
+.skillsTablesContainer{
+  margin: 0 auto;
+}
+
 .skillGroup{
-  margin-right: 60px;
+  margin: 0 30px 0 30px;
 }
 
 .skillIcon{
@@ -467,6 +471,39 @@ md-button {
 }
 #skill18{
   width: 86%;
+}
+
+/* Works section styles */
+
+#logoTransform{
+  width: 310px;
+  height: 100px;
+  margin: 20px auto;
+  outline: solid 2px black;
+}
+
+#logoTransform, #sabios_old{
+  position: relative;
+  top:0;
+  left:0;
+}
+
+@keyframes opacityTransform {
+  0% {opacity: 0;}
+  30% {opacity: 0;}
+  70% {opacity: 1;}
+  100% {opacity: : 1;}
+}
+
+#sabios_new {
+  position: absolute;
+  top:0;
+  left:0;
+  animation-name: opacityTransform;
+  animation-duration: 4s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 /* Parallax base styles */
@@ -742,7 +779,7 @@ div#imagen{
     height: auto !important;
   }
   .skillGroup {
-    margin-right: 0;
+    margin: 0 0 0 0;
   }
 }
 
@@ -759,7 +796,10 @@ div#imagen{
     height: auto !important;
   }
   .skillGroup {
-    margin-right: 0;
+    margin: 0 0 0 0;
+  }
+  #logoTransform{
+    margin-left: -27px;
   }
 }
 
