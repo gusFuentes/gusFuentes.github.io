@@ -143,26 +143,31 @@ app.controller('HomeController', function($scope) {
 
 app.controller('AboutController', function($scope) {
   $scope.message = 'Lorem ipsum dolor sit amet, an utroque sensibus torquatos quo, ne eam mundi sonet. Mea an habeo mandamus, his ad reque saepe prompta, ad prompta habemus nec. Duo ea munere legimus, in vis nibh debet iusto. Eu ius cetero sapientem assueverit, ullum viris ubique eu pro, sententiae signiferumque eu vim. Vero posse epicuri ut vel, eam ei tritani detracto.';
+  unselectToolbarButtons();
   toolbarBtns[0].classList.add('buttonFocus');
 });
 
 app.controller('WorksController', function($scope) {
   $scope.message = 'Lorem ipsum dolor sit amet, an utroque sensibus torquatos quo, ne eam mundi sonet. Mea an habeo mandamus, his ad reque saepe prompta, ad prompta habemus nec. Duo ea munere legimus, in vis nibh debet iusto. Eu ius cetero sapientem assueverit, ullum viris ubique eu pro, sententiae signiferumque eu vim. Vero posse epicuri ut vel, eam ei tritani detracto.';
+  unselectToolbarButtons();
   toolbarBtns[1].classList.add('buttonFocus');
 });
 
 app.controller('VideogamesController', function($scope) {
   $scope.message = 'Lorem ipsum dolor sit amet, an utroque sensibus torquatos quo, ne eam mundi sonet. Mea an habeo mandamus, his ad reque saepe prompta, ad prompta habemus nec. Duo ea munere legimus, in vis nibh debet iusto. Eu ius cetero sapientem assueverit, ullum viris ubique eu pro, sententiae signiferumque eu vim. Vero posse epicuri ut vel, eam ei tritani detracto.';
+  unselectToolbarButtons();
   toolbarBtns[2].classList.add('buttonFocus');
 });
 
 app.controller('ExperimentsController', function($scope) {
   $scope.message = 'Lorem ipsum dolor sit amet, an utroque sensibus torquatos quo, ne eam mundi sonet. Mea an habeo mandamus, his ad reque saepe prompta, ad prompta habemus nec. Duo ea munere legimus, in vis nibh debet iusto. Eu ius cetero sapientem assueverit, ullum viris ubique eu pro, sententiae signiferumque eu vim. Vero posse epicuri ut vel, eam ei tritani detracto.';
+  unselectToolbarButtons();
   toolbarBtns[3].classList.add('buttonFocus');
 });
 
 app.controller('MixedmediaController', function($scope) {
   $scope.message = 'Lorem ipsum dolor sit amet, an utroque sensibus torquatos quo, ne eam mundi sonet. Mea an habeo mandamus, his ad reque saepe prompta, ad prompta habemus nec. Duo ea munere legimus, in vis nibh debet iusto. Eu ius cetero sapientem assueverit, ullum viris ubique eu pro, sententiae signiferumque eu vim. Vero posse epicuri ut vel, eam ei tritani detracto.';
+  unselectToolbarButtons();
   toolbarBtns[4].classList.add('buttonFocus');
 });
 

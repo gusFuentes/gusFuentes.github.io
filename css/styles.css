@@ -25,6 +25,16 @@ a{
   text-decoration: none;
 }
 
+.inlineButton{
+  visibility: visible !important;
+  color: #fff;
+  background-color: #000;
+  font-family: 'Montserrat Alternates';
+  padding: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 .videoIframe{
   width: 526px;
   height: 300px;
