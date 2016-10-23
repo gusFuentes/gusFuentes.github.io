@@ -25,6 +25,12 @@ a{
   text-decoration: none;
 }
 
+.videoIframe{
+  width: 526px;
+  height: 300px;
+  margin: 40px auto;
+}
+
 #contentContainer{
   /*overflow-y: auto;*/
 }
@@ -791,6 +797,10 @@ div#imagen{
   .skillGroup {
     margin: 0 0 0 0;
   }
+  .videoIframe{
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -810,6 +820,10 @@ div#imagen{
   }
   #logoTransform{
     margin-left: -27px;
+  }
+  .videoIframe{
+    width: 100%;
+    height: auto;
   }
 }
 
