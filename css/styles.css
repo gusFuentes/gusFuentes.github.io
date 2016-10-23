@@ -16,6 +16,15 @@ p {
   padding:0;
 }
 
+.centered{
+  width: 100%;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+}
+
 #contentContainer{
   /*overflow-y: auto;*/
 }
@@ -633,11 +642,11 @@ div#imagen{
   cursor: pointer;
 }
 
-#div2,#div3,#div4,#div5,#div6{
+.galleryThumbs{
   background-color: #fff;
   color: #fff;
   padding: 1em 0 1em 0; 
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 1em;
   text-align: center;
