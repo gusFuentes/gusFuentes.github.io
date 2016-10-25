@@ -840,3 +840,18 @@ div#imagen{
 #inkIcon{
   width: 25px;
 }
+
+input[type=submit] {
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    background-image: url(../img/plane.svg);
+    background-repeat: no-repeat;
+    background-position: 6px;
+    color: rgba(0,0,0,0);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    text-indent: -9999px;
+    margin: 0 auto;
+}
