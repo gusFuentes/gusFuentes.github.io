@@ -672,6 +672,10 @@ div#imagen{
   /*border-radius: 1em;*/
 }
 
+.toLeft{
+  margin-bottom: 0;
+}
+
 .fancybox-skin{
   width: auto !important;
   height: auto !important;
@@ -753,17 +757,31 @@ div#imagen{
   cursor: pointer;
 }
 
+md-dialog{
+  max-width: 600px !important;
+}
+
+md-input-container{
+  padding-bottom: 10px !important;
+}
+
 /* MEDIA QUERYS */
 
 @media screen and (min-width: 1920px) {
   #menuBtn {
     display: none;
   }
+  .galleryThumbs{ 
+    width: 90%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   #menuBtn {
     display: none;
+  }
+  .galleryThumbs{ 
+    width: 90%;
   }
 }
 
@@ -773,6 +791,10 @@ div#imagen{
   }
   #myLogo {
     margin: 0 auto;
+  }
+  }
+  .galleryThumbs{ 
+    width: 80%;
   }
 }
 

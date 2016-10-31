@@ -13,7 +13,7 @@ app.controller('AppCtrl', ['$scope', '$mdBottomSheet', '$mdSidenav', '$mdDialog'
   $scope.showAdd = function(ev) {
     $mdDialog.show({
         controller: DialogController,
-        template:'<md-dialog> <md-content> <h2 class="centered innerSectionSubtitle wf-loading">Contact</h2> <form action="https://formspree.io/gusfuentes1@gmail.com" method="POST"> <div layout="column"> <md-input-container flex> <input type="text" name="name" placeholder="Name"> </md-input-container> <md-input-container flex><input type="email" name="_replyto" placeholder="E-mail"></md-input-container> <md-input-container flex><input type="text" name="message" placeholder="Message"></md-input-container> <md-input-container flex></md-input-container> <input type="submit" value="Send"> <input type="hidden" name="_next" value="thanks.html" /> </div> </form></md-content class="md-padding"> </md-dialog>',
+        template:'<md-dialog> <md-content> <h2 class="centered innerSectionSubtitle toLeft wf-loading">Contact</h2> <form action="https://formspree.io/gusfuentes1@gmail.com" method="POST"> <div layout="column"> <md-input-container flex> <input secondary type="text" name="name" placeholder="Name"> </md-input-container> <md-input-container flex><input type="email" name="_replyto" placeholder="E-mail"></md-input-container> <md-input-container flex><input type="text" name="message" placeholder="Message"></md-input-container> <md-input-container flex></md-input-container> <br /> <input type="submit" value="Send"> <input type="hidden" name="_next" value="thanks.html" /> </div> </form></md-content class="md-padding"> </md-dialog>',
         targetEvent: ev,
         clickOutsideToClose : true,
       })
@@ -56,7 +56,7 @@ $mdThemingProvider.definePalette('customPalette', {
 	'200': 'ef9a9a',
 	'300': 'e57373',
 	'400': 'ef5350',
-	'500': 'f44336',
+	'500': '000000',
 	'600': '000000',
 	'700': 'd32f2f',
 	'800': 'c62828',
