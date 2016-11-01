@@ -699,7 +699,7 @@ div#imagen{
   z-index: 5; /* slide over group 2 */
 }
 #group1 .parallax__layer--base {
-  background: #000;
+  background: url(../img/img01.jpg) center;
 }
 
 #group2 {
