@@ -589,8 +589,12 @@ md-button {
 
 /* parallax titles styles */
 
-#worksTitle, #gamesTitle, #sandboxTitle, #artsTitle {
+#aboutTitle, #worksTitle, #gamesTitle, #sandboxTitle, #artsTitle {
   font-weight: bold;
+}
+#aboutTitle{
+  font-size: 25vw;
+  top: 78% !important;
 }
 #worksTitle{
   font-size: 25vw;
@@ -812,6 +816,9 @@ md-input-container{
     margin: 0 auto;
     margin-left: 57px;
   }
+  #aboutTitle{
+    top: 65% !important;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -832,6 +839,9 @@ md-input-container{
   .videoIframe{
     width: 100%;
     height: auto;
+  }
+  #aboutTitle{
+    top: 65% !important;
   }
 }
 
@@ -856,6 +866,9 @@ md-input-container{
   .videoIframe{
     width: 100%;
     height: auto;
+  }
+  #aboutTitle{
+    top: 66% !important;
   }
 }
 
