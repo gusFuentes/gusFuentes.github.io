@@ -11,14 +11,25 @@
 		<script type="text/javascript" src="js/fontsRequests.js"></script>
 	</head>
 	<body layout="row" ng-controller="AppCtrl">
-		<h1>Rythm</h1>
-		<h3 id="rangesIndicator"></h3>
-		<h3 id="goodIndicator"></h3>
-		<h3 id="intervalIndicator"></h3>
-		<h3 id="timeIndicator"></h3>
-		<button id="hitButton" onclick="takeHit();"> hit </button>
-		<h3 id="difference"></h3>
-		<h3 id="goodOrBad"></h3>
+	
+		<div id="preload" class="appSection">
+		  <h1>Rythm</h1>
+		</div>
+
+		<div id="selectTempo" class="appSection">
+		  <h1>Select the Tempo</h1>
+		  <button id="startPlaygroundBtn" onclick="startCountdown();"> 250 straight </button>
+		</div>
+
+		<div id="playground" class="appSection">
+		  <button id="hitButton" onclick="takeHit();">Ready!</button>
+		  <h3 id="goodIndicator"></h3>
+		  <h3 id="intervalIndicator"></h3>
+		  <h3 id="timeIndicator"></h3>
+		  <h3 id="difference"></h3>
+		  <h3 id="goodOrBad"></h3>
+		  <h3 id="rangesIndicator"></h3>
+		</div>
 		
 		<script type="text/javascript" src="js/rythm.js"></script>
 	</body>
