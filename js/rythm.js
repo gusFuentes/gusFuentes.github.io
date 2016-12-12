@@ -146,7 +146,7 @@ function countdown() {
     initClock();
     clearInterval(countdownInterval);
   }
-  var beat = new Audio("https://gusfuentes.github.io/sound/4d.mp3");
+  var beat = new Audio("http://www.w3schools.com/html/horse.ogg");
 
   if(countdownNumber == (innerCountdownNumber/4) * 3){
     hitButton.innerHTML = "1";
