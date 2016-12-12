@@ -88,7 +88,7 @@ function clock() {
       
        if(ellapsedTime == ranges[i][2]){
          hitButton.innerHTML = i + 1;
-         var beat = new Audio("https://gusfuentes.github.io/sound/4d.mp3");
+         var beat = new Audio("./sound/4d.mp3");
          beat.play();
        }
     }
@@ -146,7 +146,7 @@ function countdown() {
     initClock();
     clearInterval(countdownInterval);
   }
-  var beat = new Audio("http://www.w3schools.com/html/horse.ogg");
+  var beat = new Audio("./sound/4d.mp3");
 
   if(countdownNumber == (innerCountdownNumber/4) * 3){
     hitButton.innerHTML = "1";
