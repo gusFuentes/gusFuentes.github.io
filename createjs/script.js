@@ -4,7 +4,7 @@ canvas.height = window.innerHeight;
 stage = new createjs.Stage(canvas);
 
 var messageField;		//Message display field
-messageField = new createjs.Text("Loading", "bold 24px Arial", "#000");
+messageField = new createjs.Text("Gus Game", "bold 24px Arial", "#000");
 	messageField.maxWidth = 1000;
 	messageField.textAlign = "center";
 	messageField.textBaseline = "middle";
@@ -24,7 +24,6 @@ function handleImageLoad(event) {
 	stage.addChild(container);
 
 	// create and populate the screen with random daisies:
-	for (var i = 0; i < 100; i++) {
 		bitmap = new createjs.Bitmap(image);
 		container.addChild(bitmap);
 		bitmap.x = canvas.width * Math.random() | 0;
@@ -60,8 +59,6 @@ function handleImageLoad(event) {
 			this.scaleX = this.scaleY = this.scale;
 			update = true;
 		});
-
-	}
 
 	//examples.hideDistractor();
 	createjs.Ticker.addEventListener("tick", tick);
