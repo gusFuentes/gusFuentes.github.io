@@ -17,29 +17,31 @@ var PrototipoNave = function(){
 	this.bitmap.y = canvas.height / 2;	
 	this.bitmap.regX = this.image.width / 2 | 0;
 	this.bitmap.regY = this.image.height / 2 | 0;
+	this.bitmap.width = 64;
+	this.bitmap.height = 64;
 	this.vx = 0;
 	this.vy = 0;
 	stage.addChild(this.container);
 }
 
-PrototipoNave.prototype.UpdatePosition = function (){ 
-  this.bitmap.x = this.bitmap.x + this.vx;
-  this.bitmap.y = this.bitmap.y + this.vy;
+PrototipoNave.prototype.UpdatePosition = function (dt){ 
+  this.bitmap.x = this.bitmap.x + this.vx * dt;
+  this.bitmap.y = this.bitmap.y + this.vy * dt;
 
-  if(this.bitmap.x < 0){
+  if(this.bitmap.x < this.bitmap.width/2){
     this.vx = 0;
-    this.bitmap.x = 0;
-  }else if(this.bitmap.x > window.innerWidth - this.width){
+    this.bitmap.x = this.bitmap.width/2;
+  }else if(this.bitmap.x > window.innerWidth - this.bitmap.width/2){
     this.vx = 0;
-    this.bitmap.x = window.innerWidth - this.width;
+    this.bitmap.x = window.innerWidth - this.bitmap.width/2;
   };
 
-  if(this.bitmap.y < 0){
+  if(this.bitmap.y < this.bitmap.height/2){
     this.vy = 0;
-    this.bitmap.y = 0;
-  }else if(this.bitmap.y > window.innerHeight - this.height){
+    this.bitmap.y = this.bitmap.height/2;
+  }else if(this.bitmap.y > window.innerHeight - this.bitmap.height/2){
     this.vy = 0;
-    this.bitmap.y = window.innerHeight - this.height;
+    this.bitmap.y = window.innerHeight - this.bitmap.height/2;
   };
 }
 
@@ -84,7 +86,7 @@ createjs.Ticker.addEventListener("tick", tick);
 createjs.Ticker.setFPS(60);
 
 function tick(event) {
-	nuevaNave.UpdatePosition();
+	nuevaNave.UpdatePosition(0.016);
 	nuevaNave.bitmap.rotation = angleInDegrees;
 	stage.update();
 }
