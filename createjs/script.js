@@ -2,6 +2,13 @@ canvas = document.getElementById("gameCanvas");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 stage = new createjs.Stage(canvas);
+var TO_RADIANS = Math.PI/180; 
+var angle = 0;
+
+stage.addEventListener("mousemove", function(e){
+		angle = Math.atan2( ship_coords[0] - e.clientX ,ship_coords[1] -  e.clientY  )*-1;
+		console.log("reading");
+	})
 
 var messageField;		//Message display field
 messageField = new createjs.Text("Gus Game", "bold 24px Arial", "#000");
