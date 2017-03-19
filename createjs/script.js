@@ -5,7 +5,7 @@ stage = new createjs.Stage(canvas);
 var TO_RADIANS = Math.PI/180; 
 var angle = 0;
 
-stage.addEventListener("mousemove", function(e){
+canvas.addEventListener("mousemove", function(e){
 		angle = Math.atan2( ship_coords[0] - e.clientX ,ship_coords[1] -  e.clientY  )*-1;
 		console.log("reading");
 	})
