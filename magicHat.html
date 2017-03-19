@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en" ng-app="App">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Magic hat responsive routed and themed Full Angular Template by Gus Fuentes / gusfuentes1@gmail.com">
+		<meta name="theme-color" content="#000">
+		<title>Magic Hat v1.0</title>
+		<link rel = "shortcut icon" type = "image/x-icon" href = "img/favicon.ico" />
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+		<script type="text/javascript" src="js/fontsRequests.js"></script>
+		<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+	</head>
+	<body layout="row" ng-controller="AppCtrl">
+
+		<script type="text/ng-template" id="pages/home.html">
+		    <md-content flex>
+		    	<h1> home </h1>
+	      	</md-content>
+	    </script>
+
+	    <script type="text/ng-template" id="pages/section_1.html">
+	    	<md-content flex>
+	    		<h1> section 1 </h1>
+	      	</md-content>
+	    </script>
+
+	    <script type="text/ng-template" id="pages/section_2.html">
+	      	<md-content flex>
+	      		<h1> section 2 </h1>
+			</md-content>
+	    </script>
+
+	    <script type="text/ng-template" id="pages/section_3.html">
+	    	<md-content flex>  
+	    		<h1> section 3 </h1> 
+		    </md-content>
+	    </script>
+
+	    <script type="text/ng-template" id="pages/section_4.html">
+		    <md-content flex>
+		    	<h1> section 4 </h1>
+	      	</md-content>
+	    </scrfipt>
+
+	    <script type="text/ng-template" id="pages/section_5.html">
+	      	<md-content id="section 5" flex>
+	      		<h1> section 5 </h1>	      		
+			</md-content>		
+	    </script>
+
+		<md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
+			<div class="sidenavContainer" layout="column" layout-align="center center">
+				<button class="sidenavButton" go-click="section_1" ng-click="toggleSidenav('left')">
+					<div>
+						<h1 class="wf-loading">section 1</h1>
+						<h1 class="wf-loading">section 1</h1>
+					</div>
+				</button>
+				<button class="sidenavButton" go-click="section_2" ng-click="toggleSidenav('left')">
+					<div>
+						<h1 class="wf-loading">section 2</h1>
+						<h1 class="wf-loading">section 2</h1>
+					</div>
+				</button>
+				<button class="sidenavButton" go-click="section_3" ng-click="toggleSidenav('left')">
+					<div>
+						<h1 class="wf-loading">section 3</h1>
+						<h1 class="wf-loading">section 3</h1>
+					</div>
+				</button>
+				<button class="sidenavButton" go-click="section_4" ng-click="toggleSidenav('left')">
+					<div>
+						<h1 class="wf-loading">section 4</h1>
+						<h1 class="wf-loading">section 4</h1>
+					</div>
+				</button>
+				<button class="sidenavButton" go-click="section_5" ng-click="toggleSidenav('left')">
+					<div>
+						<h1 class="wf-loading">section 5</h1>
+						<h1 class="wf-loading">section 5</h1>
+					</div>
+				</button>
+			</div>
+		</md-sidenav>
+
+		<div layout="column" class="relative" layout-fill role="main">
+			<md-button class="md-fab md-fab-bottom-right md-primary md-hue-1 md-raised" aria-label="Add" ng-click="showAdd($event)">
+				<img id="inkIcon" src="img/ink.svg"></img>
+			</md-button>
+
+			<md-toolbar>
+				<div class="md-toolbar-tools"  layout-align="space-between center">
+					<button id="menuBtn" class="c-hamburger c-hamburger--htx" ng-click="toggleSidenav('left')">
+					  <span>toggle menu</span>
+					</button>
+					<img id="myLogo" src="img/logo.svg" go-click="/" ng-click="closeSidenav('left')"></img>
+
+					<div id="toolbarBtnsContainer">
+						<span class="wf-loading toolbarBtn" ng-click="closeSidenav('left')" go-click="section_1">section 1</span>
+						<span class="wf-loading toolbarBtn" ng-click="closeSidenav('left')" go-click="section_2">section 2</span>
+						<span class="wf-loading toolbarBtn" ng-click="closeSidenav('left')" go-click="section_3">section 3</span>
+						<span class="wf-loading toolbarBtn" ng-click="closeSidenav('left')" go-click="section_4">section 4</span>
+						<span class="wf-loading toolbarBtn" ng-click="closeSidenav('left')" go-click="section_5">section 5</span>
+					</div>			
+				</div>
+			</md-toolbar>
+
+			<div id="contentContainer" ng-view layout="column" flex></div>
+
+		</div>
+
+		<!-- Angular Material Dependencies -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-animate.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-aria.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.5/angular-material.js"></script>
+		<script src="https://cdn.jsdelivr.net/angular-material-icons/0.4.0/angular-material-icons.min.js"></script>
+
+		<!-- Magic Hat Codes -->
+		<script type="text/javascript" src="js/magicHat.js"></script>
+		<script type="text/javascript" src="js/misc.js"></script>
+	</body>
+</html>
+
