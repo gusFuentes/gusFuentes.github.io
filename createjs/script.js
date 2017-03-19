@@ -13,7 +13,7 @@ messageField = new createjs.Text("Loading", "bold 24px Arial", "#000");
 	stage.addChild(messageField);
 	stage.update();
 var image = new Image();
-	image.src = "http://pixeljoint.com/files/icons/spaceship.png";
+	image.src = "img/spaceship.png";
 image.onload = handleImageLoad;
 var update = true;
 
