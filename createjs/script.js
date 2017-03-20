@@ -34,7 +34,7 @@ var Particle = function () {
 	this.rect.y = this.rect.regY;
 	this.rect.graphics.drawRect(this.rect.x, this.rect.y, 4, 4);
 	this.rect.graphics.endFill();
-    stage.addChild(this.rect);
+	stage.addChild(this.rect);
 };
 
 Particle.prototype.Update = function () {
