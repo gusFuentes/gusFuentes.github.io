@@ -5,9 +5,7 @@
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
 </style>
-<g>
-	<rect x="7.5" y="7.5" class="st0" width="49.1" height="12.1"/>
-	<rect x="19.8" y="26" class="st0" width="36.7" height="12.1"/>
-	<rect x="32" y="44.4" class="st0" width="24.5" height="12.1"/>
-</g>
+<rect x="7.5" y="7.5" class="st0" width="49.1" height="7.2"/>
+<rect x="32" y="49.3" class="st0" width="24.5" height="7.2"/>
+<rect x="19.8" y="28.4" class="st0" width="36.7" height="7.2"/>
 </svg>
