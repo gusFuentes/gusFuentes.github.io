@@ -594,7 +594,8 @@ md-button {
 }
 #aboutTitle{
   font-size: 25vw;
-  top: 78% !important;
+  /*top: 78% !important;*/
+  color: #ebebeb;
 }
 #worksTitle{
   font-size: 25vw;
