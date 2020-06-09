@@ -3,6 +3,7 @@ var mic;
 function setup(){
   createCanvas(200, 200);
   amplitude = new p5.Amplitude();
+  getAudioContext().suspend();
   
   //MICRO
   mic = new p5.AudioIn();
