@@ -1,3 +1,4 @@
+console.log("v.01")
 var mic;
 var can;
 
