@@ -1,9 +1,9 @@
-console.log("v.02")
+console.log("v.03")
 var mic;
 var can;
 
 function setup(){
-  var cnv = createCanvas(200, 200);
+  var cnv = createCanvas(130, 80);
   cnv.mousePressed(userStartAudio);
   mic = new p5.AudioIn();
   mic.start();
@@ -32,5 +32,5 @@ function draw(){
 	*/
   }
 
-  console.log(level);
+  //console.log(level);
 }
