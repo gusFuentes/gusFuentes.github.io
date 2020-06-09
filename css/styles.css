@@ -7,3 +7,10 @@ body {
 	overflow: hidden;
    	background-color: #cccccc;
 }
+
+canvas {
+	margin-top: 596px;
+	margin-right: 160px;
+	width: 130px;
+	height: 80px;
+}

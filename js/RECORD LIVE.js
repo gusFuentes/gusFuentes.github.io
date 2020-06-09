@@ -1,4 +1,4 @@
-console.log("v.01")
+console.log("v.02")
 var mic;
 var can;
 
@@ -11,7 +11,7 @@ function setup(){
 
 function draw(){
 
-  background('#FFD8B9');
+  background('#FAA284');
 
   var level = mic.getLevel();
   var mouthHeight = map(level*45, 0, 1, 0, 200);
