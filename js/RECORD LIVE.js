@@ -18,7 +18,7 @@ function draw(){
   if(level > 0.0015){
   fill('#990000');
 	noStroke();
-	rect(0, (height/2)-(size/2), 200, mouthHeight);
+	rect(0, (height/2)-(mouthHeight/2), 200, mouthHeight);
 
 	/*//Dientes
 	fill('#ffffff');
