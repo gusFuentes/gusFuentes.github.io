@@ -35,3 +35,7 @@ function draw(){
 
   console.log(level);
 }
+
+function mousePressed() {
+  userStartAudio();
+}
