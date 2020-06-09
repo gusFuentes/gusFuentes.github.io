@@ -1,13 +1,24 @@
 var mic;
+var can;
 
 function setup(){
-  createCanvas(200, 200);
+  can = createCanvas(200, 200);
   amplitude = new p5.Amplitude();
-  getAudioContext().suspend();
-  
-  //MICRO
   mic = new p5.AudioIn();
+  can.id = "esteCan";
+
+  document.getElementById("defaultCanvas0").addEventListener('click', function (event) {
+       console.log("activado");
+  //MICRO
+  
   mic.start();
+ });
+}
+
+
+
+
+function activar() {
 
 }
 
@@ -35,8 +46,4 @@ function draw(){
   }
 
   console.log(level);
-}
-
-function mousePressed() {
-  userStartAudio();
 }
