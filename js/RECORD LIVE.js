@@ -1,6 +1,7 @@
 var mic;
 var can;
 var amplitude;
+var activated = false;
 
 function setup(){
   can = createCanvas(200, 200);
@@ -16,7 +17,7 @@ function setup(){
 }
 
 function draw(){
-
+   if (activated) {
   background('#FFD8B9');
 
   var level = mic.getLevel();
@@ -26,7 +27,8 @@ function draw(){
   fill('#990000');
 	noStroke();
 	rect(0, (height/2)-(size/2), 200, size);
-
+  console.log(level);
+  }
 	/*//Dientes
 	fill('#ffffff');
 	noStroke();
@@ -38,5 +40,5 @@ function draw(){
 	*/
   }
 
-  console.log(level);
+ 
 }
