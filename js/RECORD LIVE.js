@@ -13,6 +13,7 @@ function setup(){
   amplitude = new p5.Amplitude();
   mic = new p5.AudioIn();
   mic.start();
+  activated = true;
  });
 }
 
