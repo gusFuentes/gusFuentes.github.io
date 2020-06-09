@@ -1,10 +1,5 @@
 var mic;
 
-function preload() {
-  soundFormats('mp3', 'ogg');
-  mySound = loadSound('assets/sounds/doorbell.mp3');
-}
-
 function setup(){
   createCanvas(200, 200);
   amplitude = new p5.Amplitude();
