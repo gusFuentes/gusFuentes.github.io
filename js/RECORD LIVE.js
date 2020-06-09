@@ -38,5 +38,5 @@ function draw(){
 	*/
   }
 
-  //console.log(level);
+  console.log(level);
 }
