@@ -2,24 +2,10 @@ var mic;
 var can;
 
 function setup(){
-  can = createCanvas(200, 200);
-  amplitude = new p5.Amplitude();
+  var cnv = createCanvas(200, 200);
+  cnv.mousePressed(userStartAudio);
   mic = new p5.AudioIn();
-  can.id = "esteCan";
-
-  document.getElementById("defaultCanvas0").addEventListener('click', function (event) {
-       console.log("activado");
-  //MICRO
-  
   mic.start();
- });
-}
-
-
-
-
-function activar() {
-
 }
 
 function draw(){
@@ -27,12 +13,12 @@ function draw(){
   background('#FFD8B9');
 
   var level = mic.getLevel();
-  var size = map(level*45, 0, 1, 0, 200);
+  var mouthHeight = map(level*45, 0, 1, 0, 200);
 
   if(level > 0.0015){
   fill('#990000');
 	noStroke();
-	rect(0, (height/2)-(size/2), 200, size);
+	rect(0, (height/2)-(size/2), 200, mouthHeight);
 
 	/*//Dientes
 	fill('#ffffff');
