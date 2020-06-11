@@ -1,4 +1,4 @@
-console.log("v.09")
+console.log("v.10")
 var mic;
 var can;
 
@@ -12,13 +12,13 @@ function setup(){
   cnv.mousePressed(userStartAudio);
   
   //Audio from mic
-  //mic = new p5.AudioIn();
-  //mic.start();
+  mic = new p5.AudioIn();
+  mic.start();
 
   //Audio from file
-  amplitude = new p5.Amplitude();
+  /*amplitude = new p5.Amplitude();
   mySound.setVolume(0.1);
-  mySound.play();
+  mySound.play();*/
 }
 
 function draw(){
@@ -26,10 +26,10 @@ function draw(){
   background('#FAA284');
 
   //Audio from mic
-  //var level = mic.getLevel();
+  var level = mic.getLevel();
 
   //Audio from file
-  var level = amplitude.getLevel();
+  //var level = amplitude.getLevel();
 
   var mouthHeight = map(level*45, 0, 1, 0, 200);
 
@@ -48,7 +48,7 @@ function draw(){
 	ellipse(100,100,200,level*1600);
 	*/
   } else {
-    fill('#990000');
+    fill('#89493D');
     noStroke();
     rect(0, (height/2)-(mouthHeight/2), 200, 10);
   }
