@@ -1,4 +1,4 @@
-console.log("v.03")
+console.log("v.04")
 var mic;
 var can;
 
@@ -30,6 +30,8 @@ function draw(){
 	/*//Boca circular
 	ellipse(100,100,200,level*1600);
 	*/
+  } else {
+    rect(0, (height/2)-(mouthHeight/2), 200, 20);
   }
 
   //console.log(level);
