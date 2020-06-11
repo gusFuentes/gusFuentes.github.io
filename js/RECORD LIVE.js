@@ -1,4 +1,4 @@
-console.log("v.07")
+console.log("v.08")
 var mic;
 var can;
 
@@ -25,7 +25,11 @@ function draw(){
 
   background('#FAA284');
 
+  //Audio from mic
   var level = mic.getLevel();
+  //Audio from file
+  var level = amplitude.getLevel();
+
   var mouthHeight = map(level*45, 0, 1, 0, 200);
 
   if(level > 0.0015){
