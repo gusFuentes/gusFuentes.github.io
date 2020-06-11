@@ -1,4 +1,4 @@
-console.log("v.08")
+console.log("v.09")
 var mic;
 var can;
 
@@ -26,7 +26,8 @@ function draw(){
   background('#FAA284');
 
   //Audio from mic
-  var level = mic.getLevel();
+  //var level = mic.getLevel();
+
   //Audio from file
   var level = amplitude.getLevel();
 
