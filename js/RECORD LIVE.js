@@ -1,12 +1,24 @@
-console.log("v.05")
+console.log("v.06")
 var mic;
 var can;
+
+function preload() {
+  soundFormats('mp3', 'ogg');
+  mySound = loadSound('assets/sounds/total.mp3');
+}
 
 function setup(){
   var cnv = createCanvas(130, 80);
   cnv.mousePressed(userStartAudio);
+  
+  //Audio from mic
   mic = new p5.AudioIn();
   mic.start();
+
+  //Audio from file
+  amplitude = new p5.Amplitude();
+  mySound.setVolume(0.1);
+  mySound.play();
 }
 
 function draw(){
