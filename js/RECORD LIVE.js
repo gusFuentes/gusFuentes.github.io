@@ -1,4 +1,4 @@
-console.log("v.04")
+console.log("v.05")
 var mic;
 var can;
 
@@ -31,7 +31,9 @@ function draw(){
 	ellipse(100,100,200,level*1600);
 	*/
   } else {
-    rect(0, (height/2)-(mouthHeight/2), 200, 20);
+    fill('#990000');
+    noStroke();
+    rect(0, (height/2)-(mouthHeight/2), 200, 10);
   }
 
   //console.log(level);
