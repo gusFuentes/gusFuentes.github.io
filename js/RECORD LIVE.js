@@ -1,4 +1,4 @@
-console.log("v.06")
+console.log("v.07")
 var mic;
 var can;
 
@@ -12,8 +12,8 @@ function setup(){
   cnv.mousePressed(userStartAudio);
   
   //Audio from mic
-  mic = new p5.AudioIn();
-  mic.start();
+  //mic = new p5.AudioIn();
+  //mic.start();
 
   //Audio from file
   amplitude = new p5.Amplitude();
