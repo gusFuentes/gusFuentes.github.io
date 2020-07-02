@@ -76,8 +76,6 @@ function keyPressed(event) {
       mostrarImagen("url('img/participantes.png')");
       break
   }
-
-  stage.update();
 }
 
 function mostrarImagen(imgurl) {
