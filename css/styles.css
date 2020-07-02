@@ -12,3 +12,9 @@ canvas {
 	margin-top: 596px;
 	margin-right: 160px;
 }
+
+#imagen {
+	width: 1920px;
+	height: 1080px;
+	/*background-image: url("../img/EcosystemMapOSP.png");*/
+}
